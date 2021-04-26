@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.main .main__cards .card .card__image,
+.main .main__menu .main__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer,
+.container .hero .hero__list,
+.container .hero {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .main__cards .card .card__image,
+.main .main__menu .main__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer,
+.container .hero .hero__list,
+.container .hero {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  box-shadow: 0 0 5px 3px #CCCCCC;
+  width: 92%;
+  margin: 50px auto;
+  height: auto;
+}
+
+.container .hero {
+  grid-template-columns: repeat(2, auto);
+  justify-content: space-between;
+  padding: 30px;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.container .hero .hero__title {
+  font-size: 3rem;
+  font-family: arial;
+  text-transform: uppercase;
+  color: #000;
+  font-style: italic;
+}
+
+.container .hero .hero__list {
+  grid-template-columns: repeat(4, auto);
+  gap: 25px;
+}
+
+.container .hero .hero__list .hero__item {
+  list-style: none;
+}
+
+.container .hero .hero__list .hero__item .hero__link {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-family: arial;
+  text-transform: uppercase;
+  color: #000;
+  transition: 0.5s ease;
+}
+
+.container .hero .hero__list .hero__item .hero__link:hover {
+  color: #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.main {
+  padding: 20px 25px 20px 15px;
+  display: grid;
+  grid-template-columns: minmax(50px, 180px) minmax(300px, 1fr);
+  gap: 30px;
+}
+
+.main .main__menu {
+  text-align: center;
+}
+
+.main .main__menu .main__title {
+  font-size: 1.4rem;
+  font-family: arial;
+  text-transform: uppercase;
+  color: #ccc;
+  font-weight: 400;
+  text-transform: initial;
+  color: #000;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #EEEEEE;
+  line-height: 35px;
+}
+
+.main .main__menu .main__links {
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+.main .main__menu .main__links .main__link {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-family: arial;
+  text-transform: uppercase;
+  color: #ccc;
+  color: #000000;
+  margin-bottom: 20px;
+  background: #EEEEEE;
+  transition: 0.5s ease;
+}
+
+.main .main__menu .main__links .main__link:hover {
+  background: rgba(0, 0, 0, 0.411);
+  color: #fff;
+}
+
+.main .main__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, auto));
+  gap: 25px 20px;
+}
+
+.main .main__cards .card {
+  border: 1px solid #CCCCCC;
+}
+
+.main .main__cards .card .card__image {
+  background: #CCCCCC;
+  height: 180px;
+  flex-direction: column;
+  position: relative;
+  padding: 10px;
+}
+
+.main .main__cards .card .card__image .card__number {
+  font-size: 1.4rem;
+  font-family: arial;
+  text-transform: uppercase;
+  color: #ccc;
+  font-size: 2rem;
+  color: #808080;
+}
+
+.main .main__cards .card .card__image .card__text {
+  font-size: 1.4rem;
+  font-family: arial;
+  text-transform: uppercase;
+  color: #ccc;
+  color: #808080;
+  font-size: 1.2rem;
+  text-transform: initial;
+  position: absolute;
+  bottom: 6px;
+  right: 8px;
+  letter-spacing: 1.1px;
+}
+
+.main .main__cards .card .card__desc {
+  padding: 8px 10px;
+  font-size: 1.4rem;
+  font-family: arial;
+  text-transform: uppercase;
+  color: #ccc;
+  text-transform: initial;
+}
+
+.main .main__cards .card .card__desc .card__name {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #000000;
+}
+
+.main .main__cards .card .card__desc .card__copy {
+  color: #808080;
+}
+
+.footer {
+  grid-template-columns: repeat(2, auto);
+  padding: 30px;
+  justify-content: space-between;
+}
+
+.footer .footer__title {
+  font-size: 3rem;
+  font-family: arial;
+  text-transform: uppercase;
+  color: #000;
+  font-style: italic;
+  color: #808080;
+}
+
+.footer .footer__copy {
+  font-family: arial;
+  font-size: 1.4rem;
+}

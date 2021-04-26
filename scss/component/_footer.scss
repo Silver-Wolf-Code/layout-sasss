@@ -1,0 +1,17 @@
+.footer {
+  @extend %grid;
+  grid-template-columns: repeat(2, auto);
+  padding: 30px;
+  justify-content: space-between;
+
+  .footer__title {
+    @include title;
+    color: $color-title-second;
+  }
+
+  .footer__copy {
+    font-family: arial;
+    font-size: 1.4rem;
+  }
+
+}

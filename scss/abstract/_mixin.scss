@@ -1,0 +1,14 @@
+@mixin text ($ts:1.4rem, $ff:arial, $tt:uppercase, $ct:#ccc, ) {
+  font-size: $ts;
+  font-family: $ff;
+  text-transform: $tt;
+  color: $ct;
+}
+
+@mixin title ($ts:3rem, $ff:arial, $tt:uppercase, $ct:#000, ) {
+  font-size: $ts;
+  font-family: $ff;
+  text-transform: $tt;
+  color: $ct;
+  font-style: italic;
+}

@@ -1,0 +1,101 @@
+.main {
+  padding: 20px 25px 20px 15px;
+  display: grid;
+  grid-template-columns: minmax(50px, 180px) minmax(300px, 1fr);
+  gap: 30px;
+
+  .main__menu {
+    text-align: center;
+
+    .main__title {
+      @include text;
+      font-weight: 400;
+      text-transform: initial;
+      color: #000;
+      font-size: 1.5rem;
+      border-bottom: 1px solid $color-primary;
+      line-height: 35px;
+    }
+
+    .main__links {
+      margin-top: 20px;
+      @extend %flex;
+      flex-direction: column;
+
+      .main__link {
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+        text-decoration: none;
+        @include text;
+        color: $color-title-primary;
+        margin-bottom: 20px;
+        background: $color-primary;
+        transition: .5s ease;
+
+        &:hover {
+          background: rgba(0, 0, 0, 0.411);
+          color: #fff;
+        }
+      }
+
+    }
+
+  }
+
+  .main__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, auto));
+    gap: 25px 20px;
+
+    .card {
+      border: 1px solid $color-second;
+
+      .card__image {
+        background: $color-second;
+        height: 180px;
+        @extend %flex;
+        flex-direction: column;
+        position: relative;
+        padding: 10px;
+
+        .card__number {
+          @include text;
+          font-size: 2rem;
+          color: $color-title-second;
+        }
+
+        .card__text {
+          @include text;
+          color: $color-title-second;
+          font-size: 1.2rem;
+          text-transform: initial;
+          position: absolute;
+          bottom: 6px;
+          right: 8px;
+          letter-spacing: 1.1px;
+        }
+
+      }
+
+      .card__desc {
+        padding: 8px 10px;
+        @include text;
+        text-transform: initial;
+
+        .card__name {
+          font-size: 1.4rem;
+          font-weight: 400;
+          color: $color-title-primary;
+        }
+
+        .card__copy {
+          color: $color-title-second;
+        }
+
+      }
+
+    }
+
+  }
+}

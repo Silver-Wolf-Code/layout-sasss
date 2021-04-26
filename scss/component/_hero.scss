@@ -1,0 +1,50 @@
+// abstract
+@import 
+  "../abstract/variables",
+  "../abstract/mixin",
+  "../abstract/inherit";
+
+.container {
+  box-shadow: 0 0 5px 3px $color-second;
+  width: 92%;
+  margin: 50px auto;
+  height: auto;
+
+  .hero {
+    @extend %grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+    padding: 30px;
+    border-bottom: 1px solid $color-primary;
+
+    .hero__title {
+      @include title;
+    }
+
+    .hero__list {
+      @extend %grid;
+      grid-template-columns: repeat(4, auto);
+      gap: 25px;
+
+      .hero__item {
+        list-style: none;
+
+        .hero__link {
+          text-decoration: none;
+          @include text(1.4rem, arial, uppercase, #000);
+          transition: .5s ease;
+
+          &:hover {
+            color: #ccc;
+            border-bottom: 1px solid #ccc;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}

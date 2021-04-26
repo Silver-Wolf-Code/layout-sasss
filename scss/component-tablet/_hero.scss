@@ -1,0 +1,16 @@
+// abstract
+@import 
+  "../abstract/variables",
+  "../abstract/mixin",
+  "../abstract/inherit";
+
+.container {
+
+  .hero {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 15px;
+
+  }
+
+}

@@ -1,0 +1,32 @@
+// abstract
+@import 
+  "../abstract/variables",
+  "../abstract/mixin",
+  "../abstract/inherit";
+
+.container {
+
+  .hero {
+    // *
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 15px;
+
+    .hero__list {
+      // *
+      grid-template-columns: repeat(3, auto);
+      grid-template-rows: repeat(2, auto);
+      justify-content: center;
+      justify-items: center;
+      text-align: center;
+
+      // *
+      .hero__item:last-child {
+        grid-column: 1 / span 3;
+      }
+
+    }
+
+  }
+
+}
